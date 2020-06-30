@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -32,7 +33,10 @@ def map():
 
 @app.route('/top')
 def top():
-    return render_template("top.html")
+    data = []
+    with open("data/restaurants.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("top.html", restaurants=data)
 
 
 if __name__ == '__main__':
