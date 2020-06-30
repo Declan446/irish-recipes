@@ -13,6 +13,7 @@ DATABASE = "irish_recipes"
 
 mongo = PyMongo(app)
 
+
 @app.route('/')
 @app.route("/get_recipes")
 def base():
@@ -32,7 +33,6 @@ def map():
 @app.route('/top')
 def top():
     return render_template("top.html")
-
 
 
 if __name__ == '__main__':
