@@ -56,7 +56,15 @@
 
     <!-- Main Content -->
     <div class="container">
-        {% block content %} {% endblock %}
+        {% block content %}
+        
+        {% for recipe in recipes %}
+        {{recipe.food}}
+        {{recipe.dish_name}}
+        {{recipe.main_ingredient}}
+        {% endfor %}
+        
+        {% endblock %}
     </div>
 
     <hr>
