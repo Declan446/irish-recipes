@@ -2,10 +2,29 @@
 {% extends 'base.html' %} {% block content %}
 <h1>Recipes</h1>
 
- {% for recipe in recipes %}
-      {{recipe.food}}
-      {{recipe.dish_name}}
-      {{recipe.ingredients}}
-      {{recipe.cooking_method}}
- {% endfor %}
+      <ul class="collapsible" data-collapsible="accordion">
+        {% for recipe in recipes %}
+        <li>
+            <div class="collapsible-header">
+
+                <div class=" task_header col s9">
+                    <i class="material-icons">expand_more</i><strong>{{recipe.dish_name}}</strong> - {{recipe.food}}
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                    {{recipe.ingredients}}
+                </span>
+            </div>
+
+            <div class="collapsible-body">
+                <span>
+                    {{recipe.cooking_method}}
+                </span>
+            </div>
+
+        </li>
+        {% endfor %}
+    </ul>
+ 
 {% endblock %}
