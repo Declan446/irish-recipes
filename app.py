@@ -54,6 +54,20 @@ def edit_recipe(recipe_id):
     return render_template("edit-recipe.html", recipe=the_recipe, food_type=all_food_type)
 
 
+@app.route("/update_recipe/<recipe_id>", methods=["POST"])
+def update_recipe(recipe_id):
+    recipes = mongo.db.recipes
+    recipes.update({"_id": ObjectId(recipe_id)},
+    {
+       "food": request.form.get["food"],
+       "dish_name": request.form.get["dish_name"],
+       "ingredients": request.form.get["ingredients"],
+       "cooking_method": request.form.get["cooking_method"]
+    })
+    return redirect(url_for("recipes"))
+
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
