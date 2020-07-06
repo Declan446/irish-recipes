@@ -6,9 +6,15 @@
         {% for recipe in recipes %}
         <li>
             <div class="collapsible-header">
+                <div class="col s3">
+                    <i class="material-icons">expand_more</i>
+                    <a class="waves-effect waves-light btn btn_small">Delete</a>
+                    <a class="waves-effect waves-light btn btn_small blue">Edit</a>
+                    
+                </div>
 
                 <div class=" task_header col s9">
-                    <i class="material-icons">expand_more</i><strong>{{recipe.dish_name}}</strong> - {{recipe.food}}
+                    <strong>{{recipe.dish_name}}</strong> - {{recipe.food}}
                 </div>
             </div>
             <div class="collapsible-body">
