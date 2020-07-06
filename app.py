@@ -23,7 +23,7 @@ def base():
 
 @app.route('/add')
 def add():
-    return render_template("add.html", 
+    return render_template("add.html",
     food_type=mongo.db.food_type.find())
 
 
@@ -45,6 +45,13 @@ def top():
     with open("data/restaurants.json", "r") as json_data:
         data = json.load(json_data)
     return render_template("top.html", restaurants=data)
+
+
+@app.route("/edit_recipe/<recipe_id>")
+def edit_recipe(recipe_id):
+    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    all_food_type = mongo.db.food_type.find()
+    return render_template("edit-recipe.html", recipe=the_recipe, food_type=all_food_type)
 
 
 if __name__ == '__main__':
