@@ -3,17 +3,15 @@
 
 <h1>Add Recipe</h1>
 
-<div class="row">
- <form>
-  <div class="form-row">
-    <div class="col">
-      <input type="text" class="form-control w-100 p-3" placeholder="First name">
-    </div><br>
-    <div class="col">
-      <input type="text" class="form-control w-100 p-3" placeholder="Last name">
-    </div>
-  </div>
- </form>
-</div>
+<select class="form-control" id="food" name="food">
+  <option value="" disabled selected>Choose Food Type</option>
+  
+</select><br>
 
+<input class="form-control" type="text" placeholder="Default input"><br>
+
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+
+<textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+  
 {% endblock %}
