@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% extends 'base2.html' %} {% block content %}
+<div class="caption center-align"><h2>Add Your Own Recipe</h2></div>
 
-<h1>Add Recipe</h1>
 <form action="{{ url_for('insert_recipe') }}" method="POST">
 
 <select class="form-control" id="food" name="food">
@@ -22,5 +22,5 @@
 <input name="action" class="btn btn-primary rounded" type="submit" value="Submit">
 
 </form>
-  
+
 {% endblock %}
