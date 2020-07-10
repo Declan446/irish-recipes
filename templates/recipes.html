@@ -7,7 +7,7 @@
   <div class="card">
     <div class="card-header text-center">
       <h2 class="">
-        <button class="btn btn-link btn-block bg-success text-white rounded" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link btn-block bg-success text-white rounded" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="">
                   <strong>{{recipe.dish_name}}</strong> - {{recipe.food}}
         </button>
       </h2>
@@ -15,7 +15,7 @@
         <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}"><button type="button" class="btn btn-outline-danger btn-sm rounded">Delete</button></a>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body text-center">
             <span>
                     <img class="img-fluid" src="{{ recipe.image }}">

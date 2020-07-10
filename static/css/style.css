@@ -2,6 +2,6 @@
     width: 100%;
 }
 
-.dec {
-    color: red;
+.slider-sizing {
+    max-height: 200px;
 }
