@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% extends 'base2.html' %} {% block content %}
-<div class="caption center-align"><h2>Add Your Own Recipe</h2></div>
+<section class="container-fluid">
+<div class="caption center-align"><h2>Add Your Own Recipe</h2></div><br>
 
 <form action="{{ url_for('insert_recipe') }}" method="POST">
 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -24,5 +25,5 @@
 <input name="action" class="btn btn-primary rounded" type="submit" value="Submit">
 
 </form>
-
+</section>
 {% endblock %}
