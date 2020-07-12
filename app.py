@@ -23,8 +23,7 @@ def base2():
 
 @app.route('/add')
 def add():
-    return render_template("add.html",
-    food_type=mongo.db.food_type.find())
+    return render_template("add.html", food_type=mongo.db.food_type.find())
 
 
 @app.route("/insert_recipe", methods=["POST"])
