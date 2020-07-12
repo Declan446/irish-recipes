@@ -61,12 +61,58 @@ For my logo i choose a picture of the *Cliffs Of Moher*. Not only is it one of I
 , i thing its perfect for the web application because it has the sea(fish recipes) and land (Meat, Vegan recipes) in it. I know 
 its a weird way to pick a logo but it makes scene to me.
 
+**Colours**
+I only used colour in a very small way in my project. I wanted to keep everything black and white except for the logo and images but for
+easy navigation and use i add some colour to key components.
+* Blue for the background of the recipe title on the recipes page.
+* Blue fot Boad Bia's social media links in the footer.
+* Blue for my submit buttons .
+* Green for my edit buttons.
+* Green for the background for recipes names in the sliders on the home page.
+* Red for my Delete buttons.
 
+**Icons**
+I used Font Awesome for the icons on my Add Recipe page, Edit page and for the social media links for boad bia in the footer.
 
+**Planning**
 
+1. I decided to create a web application on Irish recipes that users could find, add, edit and delete recipes.
+2. I talked to potential users and found out their needs.
+3. Users needs are as follows: fast, easy to navigate and clean clear recipes.
+4. I then picked my bootstrap theme (**Clean Blog**).
+5. Picked my images for my logo (*Cliffs Of Moher*).
+6. Decided what my pages were going to be in my navbar (Home, Add Recipe, Recipes, Top Irish Recipes).
+7. Picked the features that the web application would have.
+8. Designed my wireframes.
+9. Picked my recipes and images.
+10. Picked my 10 restaurants to feature on the top irish resaurants page.
+11. Picked mongo database to hold all my recipes.
+12. Then i opened gitpod and started coding.
 
+**Wireframes**
+I used Balsamiq cloud to develope my wirefames because i was able to create wirefames for large screen sizes and mobile screen sizes.
+Balsamiq cloud is a great tool for creating very professional wireframes.
 
+![Home page](/static/Wireframes/Home.png)
+Format: ![Home page](url)
 
+![GitHub Logo](/static/Wireframes/Home-Mobile.png)
+Format: ![Home mobile view](url)
 
+![GitHub Logo](/static/Wireframes/Add-recipes.png)
+Format: ![Add Recipe page](url)
 
+![GitHub Logo](/static/Wireframes/Add-Recipe-Mobile.png)
+Format: ![Add Recipe mobile view](url)
 
+![GitHub Logo](/static/Wireframes/Recipes.png)
+Format: ![Recipes page](url)
+
+![GitHub Logo](/static/Wireframes/Recipes-Mobile.png)
+Format: ![Recipes mobile view](url)
+
+![GitHub Logo](/static/Wireframes/Top-Irish-Restaurants.png)
+Format: ![Top Irish Restaurants](url)
+
+![GitHub Logo](/static/Wireframes/Top-Irish-Restaurants-Mobile.png)
+Format: ![Top Irish Restaurants mobile view](url)
