@@ -60,16 +60,17 @@ def edit_recipe(recipe_id):
 
 
 # function to update the recipes
-@app.route("/update_recipe/<recipe_id>", methods=["POST"])
-def update_recipe(recipe_id):
-    recipes = mongo.db.recipes
-    recipes.update({"_id": ObjectId(recipe_id)},
-                   {
-        "food": request.form.get["food"],
-        "dish_name": request.form.get["dish_name"],
-        "ingredients": request.form.get["ingredients"],
-        "cooking_method": request.form.get["cooking_method"]
-    })
+@app.route("/edit_recipe/<id>/update", methods=["POST"])
+def update_recipe(id):
+    print("Posting DB update")
+    mongo.db.recipes.update_one({"_id":ObjectId(id)},
+    {"$set":
+            {
+            "food": request.form.get("food"),
+            "dish_name": request.form.get("dish_name"),
+            "ingredients": request.form.get("ingredients"),
+            "cooking_method": request.form.get("cooking_method")
+    }})
     return redirect(url_for("recipes"))
 
 

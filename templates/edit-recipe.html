@@ -3,7 +3,7 @@
 <div class="caption center-align"><h2>Edit Recipe</h2></div>
 <br />
 <!--form for editing recipes and sending them to mongodb-->
-<form action="{{ url_for('insert_recipe') }}" method="POST">
+<form action="/edit_recipe/{{recipe._id}}/update" method="POST">
   <i class="fa fa-bars text-primary" aria-hidden="true"></i>
   <select class="form-control" id="food" name="food">
     <option value="" disabled selected>Choose Food Type</option>
