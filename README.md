@@ -188,7 +188,42 @@ The Irish Recipes Web Application main Technologies used were as follows:
   To rectify this problem all Materialize components were removed and replaced with Bootstrap one's.
   Due to these problems the web application took a lot longer then expected but it was a great lesson to learn
   the hard way because i now have a much better understanding of Materialize and Bootstrap frameworks.** 
+
+# Deployment
  
 
 
 
+# Credits:
+**Content:**
+
+All the Recipes in the app were taking from the BBC good food website.
+including recipe name, ingredients and cooking method.
+https://www.bbcgoodfood.com/recipes/collection/irish - automatic!
+[BBC Good Food](https://www.bbcgoodfood.com/recipes/collection/irish)
+
+All the restaurants reviews for the Top Irish Restaurants page were taking from taste.ie.
+http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/- automatic!
+[Taste.ie](http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/)
+
+**Media:**
+All the images for my recipes came from BBC good food website.
+https://www.bbcgoodfood.com/recipes/collection/irish - automatic!
+[BBC Good Food](https://www.bbcgoodfood.com/recipes/collection/irish)
+
+All the restaurant images for the Top Irish Restaurants page were taking from taste.ie.
+http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/- automatic!
+[Taste.ie](http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/)
+
+The logo image was taking off google after searching pictuers of Ireland.
+https://www.planetware.com/pictures/ireland-irl.htm - automatic!
+[Cliffs Of Moher](https://www.planetware.com/pictures/ireland-irl.htm)
+
+**Acknowledgements:**
+* I received inspiration for the top restaurants page from my mini project *Thorin and company* not only the 
+layout but also the code help me display the page.
+
+* I received inspiration for the Collapsible Accordion from the mini project *Task manager* . In the mini
+project they use a Materialize Accordion and i used a Bootstrap one .
+
+* I received inspiration for the Bootstrap theme(clean blog) from the mini project *Thorin and company*.
