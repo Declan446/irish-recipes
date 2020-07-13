@@ -205,7 +205,7 @@ The Irish Recipes Web Application main Technologies used were as follows:
 **Commands to push to heroku**
 1. $ Heroku login.
 2. $ Heroku ps:scale web=1
-3. $ Heroku push master
+3. $ Git push Heroku master.
 
 
 
