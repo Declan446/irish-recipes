@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 {% extends 'base2.html' %} {% block content %}
-<div class="caption center-align"><h2>Edit Recipe</h2></div><br>
+<div class="caption center-align"><h2>Edit Recipe</h2></div>
+<br />
 
 <form action="{{ url_for('insert_recipe') }}" method="POST">
-<i class="fa fa-bars text-primary" aria-hidden="true"></i>
-<select class="form-control" id="food" name="food">
-  <option value="" disabled selected>Choose Food Type</option>
+  <i class="fa fa-bars text-primary" aria-hidden="true"></i>
+  <select class="form-control" id="food" name="food">
+    <option value="" disabled selected>Choose Food Type</option>
 
-  {% for food in food_type %}
-        {% if food.food == recipe.food%}
-            <option value="{{food.food}}" selected >{{food.food}}</option>
-            {% else %}
-            <option value="{{food.food}}">{{food.food}}</option>
-        {% endif %}
-  {% endfor %}
-</select><br>
+    {% for food in food_type %} {% if food.food == recipe.food%}
+    <option value="{{food.food}}" selected>{{food.food}}</option>
+    {% else %}
+    <option value="{{food.food}}">{{food.food}}</option>
+    {% endif %} {% endfor %} </select
+  ><br />
 
-<i class="fa fa-cutlery text-primary" aria-hidden="true"></i>
-<input id="dish_name" name="dish_name" class="form-control" type="text" value="{{recipe.dish_name}}"><br>
+  <i class="fa fa-cutlery text-primary" aria-hidden="true"></i>
+  <input
+    id="dish_name"
+    name="dish_name"
+    class="form-control"
+    type="text"
+    value="{{recipe.dish_name}}"
+  /><br />
 
-<i class="fa fa-file-image-o text-primary" aria-hidden="true"></i>
-<input id="image" name="image" class="form-control" type="text" value="{{recipe.image}}"><br>
+  <i class="fa fa-file-image-o text-primary" aria-hidden="true"></i>
+  <input
+    id="image"
+    name="image"
+    class="form-control"
+    type="text"
+    value="{{recipe.image}}"
+  /><br />
 
-<i class="fa fa-shopping-basket text-primary" aria-hidden="true"></i>
-<textarea id="ingredients" name="ingredients" class="form-control" rows="3" placeholder="Ingredients" value="{{recipe.ingredients}}">{{recipe.ingredients}}</textarea><br>
+  <i class="fa fa-shopping-basket text-primary" aria-hidden="true"></i>
+  <textarea
+    id="ingredients"
+    name="ingredients"
+    class="form-control"
+    rows="3"
+    placeholder="Ingredients"
+    value="{{recipe.ingredients}}"
+  >
+{{recipe.ingredients}}</textarea
+  ><br />
 
-<i class="fa fa-fire text-primary" aria-hidden="true"></i>
-<textarea id="cooking_method" name="cooking_method" class="form-control" rows="3" placeholder="Cooking Method">{{recipe.cooking_method}}</textarea><br>
+  <i class="fa fa-fire text-primary" aria-hidden="true"></i>
+  <textarea
+    id="cooking_method"
+    name="cooking_method"
+    class="form-control"
+    rows="3"
+    placeholder="Cooking Method"
+  >
+{{recipe.cooking_method}}</textarea
+  ><br />
 
-
-<input name="action" class="btn btn-primary rounded" type="submit" value="Edit Recipe">
-
+  <input
+    name="action"
+    class="btn btn-primary rounded"
+    type="submit"
+    value="Edit Recipe"
+  />
 </form>
 
 {% endblock %}

@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-{% extends 'base2.html' %} 
-{% block content %}
-    <div class="caption center-align"><h2>Top Irish Restaurants</h2></div><br>
+{% extends 'base2.html' %} {% block content %}
+<div class="caption center-align"><h2>Top Irish Restaurants</h2></div>
+<br />
 
-    {% for restaurant in restaurants %}
+{% for restaurant in restaurants %} {% if loop.index % 2 != 0 %}
 
-         {% if loop.index % 2 != 0 %}
+<div class="row featurette">
+  <div class="col-md-7">
+    <h3>{{ restaurant.restaurant_name }}</h3>
+    <p>{{ restaurant.information }}</p>
+  </div>
+  <div class="col-md-5">
+    <img
+      class="featurette-image img-responsive"
+      src="{{ restaurant.image_source }}"
+      alt="Picture of {{ restaurant.restaurant_name }}"
+    />
+  </div>
+</div>
+{% else %}
+<div class="row featurette">
+  <div class="col-md-5">
+    <img
+      class="featurette-image img-responsive"
+      src="{{ restaurant.image_source }}"
+      alt="Picture of {{ restaurant.restaurant_name }}"
+    />
+  </div>
+  <div class="col-md-7">
+    <h3>{{ restaurant.restaurant_name }}</h3>
+    <p>{{ restaurant.information }}</p>
+  </div>
+</div>
+{% endif %}
+<hr class="featurette-divider" />
 
-            <div class="row featurette">
-                   <div class="col-md-7">
-                        <h3>{{ restaurant.restaurant_name }}</h3>
-                        <p>{{ restaurant.information }}</p>
-                    </div>
-                    <div class="col-md-5">
-                         <img class="featurette-image img-responsive" src="{{ restaurant.image_source }}" alt="Picture of {{ restaurant.restaurant_name }}">
-                    </div>
-            </div>
-         {% else %}
-            <div class="row featurette">
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive" src="{{ restaurant.image_source }}" alt="Picture of {{ restaurant.restaurant_name }}">
-                </div>
-                <div class="col-md-7">
-                    <h3>{{ restaurant.restaurant_name }}</h3>
-                    <p>{{ restaurant.information }}</p>
-                </div>
-            </div>
-         {% endif %} 
-            <hr class="featurette-divider">
-
-         
-{% endfor %}
-{% endblock %}
+{% endfor %} {% endblock %}
