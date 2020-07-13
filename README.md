@@ -94,28 +94,28 @@ I used Balsamiq cloud to develope my wirefames because i was able to create wire
 Balsamiq cloud is a great tool for creating very professional wireframes.
 
 ![Home page](/static/Wireframes/Home.png)
-Format: ![Home page](url)
+
 
 ![GitHub Logo](/static/Wireframes/Home-Mobile.png)
-Format: ![Home mobile view](url)
+
 
 ![GitHub Logo](/static/Wireframes/Add-recipes.png)
-Format: ![Add Recipe page](url)
+
 
 ![GitHub Logo](/static/Wireframes/Add-Recipe-Mobile.png)
-Format: ![Add Recipe mobile view](url)
+
 
 ![GitHub Logo](/static/Wireframes/Recipes.png)
-Format: ![Recipes page](url)
+
 
 ![GitHub Logo](/static/Wireframes/Recipes-Mobile.png)
-Format: ![Recipes mobile view](url)
+
 
 ![GitHub Logo](/static/Wireframes/Top-Irish-Restaurants.png)
-Format: ![Top Irish Restaurants](url)
+
 
 ![GitHub Logo](/static/Wireframes/Top-Irish-Restaurants-Mobile.png)
-Format: ![Top Irish Restaurants mobile view](url)
+
 
 The first ideas for the home are located in the static/wireframes 
 
@@ -163,7 +163,7 @@ The Irish Recipes Web Application main Technologies used were as follows:
 * **JQuery** was used as part of clean blog functionality.
 * **JavaScript** was used to initialize the Collapsible Accordion and the sliders.
 * **Mongo DB** was used as the database to store the recipes.
-* **Imports** os, json, flask, flask.Pymongo and bson.ojectedid were all imported in to the aap.py file for the functions.
+* **Imports** os, json, flask, flask.Pymongo and bson.ojectedid were all imported in to the app .py file for the functions.
 * **Bootstrap themes** was used for the theme.
 * **Bootstrap** was used for most of the features and functionality.
 * **Font Awesome** was used for the icons.
@@ -197,23 +197,39 @@ The Irish Recipes Web Application main Technologies used were as follows:
 # Credits:
 **Content:**
 
-All the Recipes in the app were taking from the BBC good food website.
+All the Recipes in the app were taking from the BBC good food website except for two.
 including recipe name, ingredients and cooking method.
 https://www.bbcgoodfood.com/recipes/collection/irish - automatic!
 [BBC Good Food](https://www.bbcgoodfood.com/recipes/collection/irish)
+
+Seared Scallops with Black Pudding and Cauliflower Purée, Crispy Spinach and Feta Filo Pie i got from Bord Bia's website.
+https://www.bordbia.ie/recipes - automatic!
+[BBC Good Food](https://www.bordbia.ie/recipes)
 
 All the restaurants reviews for the Top Irish Restaurants page were taking from taste.ie.
 http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/- automatic!
 [Taste.ie](http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/)
 
+Loam review came from The Irish Times website.
+https://www.irishtimes.com/life-and-style/food-and-drink/ireland-s-best-restaurant-for-2019-revealed-1.3890935 - automatic!
+[Irish Times](https://www.irishtimes.com/life-and-style/food-and-drink/ireland-s-best-restaurant-for-2019-revealed-1.3890935)
+
 **Media:**
-All the images for my recipes came from BBC good food website.
+All the images for my recipes came from BBC good food website except two.
 https://www.bbcgoodfood.com/recipes/collection/irish - automatic!
 [BBC Good Food](https://www.bbcgoodfood.com/recipes/collection/irish)
+
+Seared Scallops with Black Pudding and Cauliflower Purée, Crispy Spinach and Feta Filo Pie images i got from Bord Bia's website.
+https://www.bordbia.ie/recipes - automatic!
+[BBC Good Food](https://www.bordbia.ie/recipes)
 
 All the restaurant images for the Top Irish Restaurants page were taking from taste.ie.
 http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/- automatic!
 [Taste.ie](http://thetaste.ie/wp/category/top-restaurants-in-ireland/irish-restaurants-cuisine-food/)
+
+Loam image came from THE Irish Times website.
+https://www.irishtimes.com/life-and-style/food-and-drink/ireland-s-best-restaurant-for-2019-revealed-1.3890935 - automatic!
+[Irish Times](https://www.irishtimes.com/life-and-style/food-and-drink/ireland-s-best-restaurant-for-2019-revealed-1.3890935)
 
 The logo image was taking off google after searching pictuers of Ireland.
 https://www.planetware.com/pictures/ireland-irl.htm - automatic!
@@ -221,9 +237,11 @@ https://www.planetware.com/pictures/ireland-irl.htm - automatic!
 
 **Acknowledgements:**
 * I received inspiration for the top restaurants page from my mini project *Thorin and company* not only the 
-layout but also the code help me display the page.
+layout but also the code helped me display the page.
 
 * I received inspiration for the Collapsible Accordion from the mini project *Task manager* . In the mini
 project they use a Materialize Accordion and i used a Bootstrap one .
 
 * I received inspiration for the Bootstrap theme(clean blog) from the mini project *Thorin and company*.
+
+* I used the functions i learned in the task manager to get the crud working. 
