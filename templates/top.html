@@ -2,15 +2,16 @@
 {% extends 'base2.html' %} {% block content %}
 <div class="caption center-align"><h2>Top Irish Restaurants</h2></div>
 <br />
-
+<!--for loop that gets the restaurants info from restaurants.json file located in the data folder-->
 {% for restaurant in restaurants %} {% if loop.index % 2 != 0 %}
-
+<!--displays the restaurant name and information-->
 <div class="row featurette">
   <div class="col-md-7">
     <h3>{{ restaurant.restaurant_name }}</h3>
     <p>{{ restaurant.information }}</p>
   </div>
   <div class="col-md-5">
+    <!--displays the restaurants image-->
     <img
       class="featurette-image img-responsive"
       src="{{ restaurant.image_source }}"
@@ -21,6 +22,7 @@
 {% else %}
 <div class="row featurette">
   <div class="col-md-5">
+    <!--displays the restaurant image on the left if its an even number-->
     <img
       class="featurette-image img-responsive"
       src="{{ restaurant.image_source }}"
@@ -28,6 +30,7 @@
     />
   </div>
   <div class="col-md-7">
+    <!--displays the restaurant name and information on the right if its an even number-->
     <h3>{{ restaurant.restaurant_name }}</h3>
     <p>{{ restaurant.information }}</p>
   </div>

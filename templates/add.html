@@ -3,12 +3,12 @@
 <section class="container-fluid">
   <div class="caption center-align"><h2>Add Your Own Recipe</h2></div>
   <br />
-
+  <!--form to add recipes to the web application and to the mongodb-->
   <form action="{{ url_for('insert_recipe') }}" method="POST">
     <i class="fa fa-bars text-primary" aria-hidden="true"></i>
     <select class="form-control" id="food" name="food">
       <option value="" disabled selected>Choose Food Type</option>
-
+      <!--for loop for food type, dropdown input-->
       {% for food in food_type %}
       <option value="{{food.food}}">{{food.food}}</option>
       {% endfor %} </select
@@ -21,6 +21,7 @@
       type="text"
       placeholder="Recipe Name"
     /><br />
+    <!--Input field for image URL-->
     <i class="fa fa-file-image-o text-primary" aria-hidden="true"></i>
     <input
       id="image"
@@ -29,6 +30,7 @@
       type="text"
       placeholder="Image URL"
     /><br />
+    <!--Input field for ingredients-->
     <i class="fa fa-shopping-basket text-primary" aria-hidden="true"></i>
     <textarea
       id="ingredients"
@@ -38,6 +40,7 @@
       placeholder="Ingredients For Your Recipe"
     ></textarea
     ><br />
+    <!--Input field for ingredients-->
     <i class="fa fa-fire text-primary" aria-hidden="true"></i>
     <textarea
       id="cooking_method"
@@ -47,7 +50,7 @@
       placeholder="Cooking Method"
     ></textarea
     ><br />
-
+    <!--Submit button to add the recipe to the web application and mongodb-->
     <input
       name="action"
       class="btn btn-primary rounded"

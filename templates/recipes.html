@@ -3,10 +3,19 @@
 <div class="caption center-align"><h2 class="">Recipes</h2></div>
 <br />
 
+<div class="caption center-align">
+  <form class="example" action="action_page.php">
+    <input type="text" placeholder="Search Reccipes" name="search" />
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div><br>
+<!--collapseible accordion to display the recipes from mongodb. also uses a for loop to get the data-->
 <div class="accordion" id="accordionExample">
+  <!--for loop to get the recipes from mongodb-->
   {% for recipe in recipes %}
   <div class="card">
     <div class="card-header text-center">
+      <!--button to collapse the accordion-->
       <button
         class="btn btn-link btn-block bg-info text-white rounded"
         type="button"
@@ -14,21 +23,21 @@
         data-target="#collapse{{ recipe._id }}"
         aria-expanded=""
         aria-controls="collapseone"
-      >
+      ><!--displays the recipes dish name-->        <!--displays the recipes food type-->
         <h5><strong>{{recipe.dish_name}}</strong> - {{recipe.food}}</h5></button
       ><br />
-
+      <!--recipes image-->
       <div class="card-body text-center">
         <span>
           <img class="img-fluid" src="{{ recipe.image }}" />
         </span>
       </div>
-
+      <!--edit button for recipes-->
       <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}"
         ><button type="button" class="btn btn-outline-success btn-sm rounded">
           Edit
         </button></a
-      >
+      ><!--delete button for recipes-->
       <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}"
         ><button type="button" class="btn btn-outline-danger btn-sm rounded">
           Delete
@@ -41,13 +50,13 @@
       class="collapse"
       aria-labelledby="headingOne"
       data-parent="#accordionExample"
-    >
+    > <!--displays the recipes ingredients-->
       <div class="card-body">
         <span>
           {{recipe.ingredients}}
         </span>
       </div>
-
+      <!--displays the recipes cooking methods-->
       <div class="card-body">
         <span>
           {{recipe.cooking_method}}
