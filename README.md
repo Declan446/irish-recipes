@@ -153,4 +153,21 @@ You can changed any detail of the recipe and submit the changes to mongo databas
 **Delete button** A delete button is present on every recipe and when clicked not only will it be deleted from the web application
 it will also be deleted from the mongo database.
 
+# Technologies Used
+The Irish Recipes Web Application main Technologies used were as follows:
+* **Gitpod** was used as the IDE for building Irish Recipes web application.
+* **GitHub** was used to store the project remotely and always used to deploy the project while in constrcution before deploying to heroku
+* **HTML** was used to structure the web pages.
+* **CSS** was used for the styling.
+* **Phython** was used for alot of the core funtinality
+* **JQuery** was used as part of clean blog functionality.
+* **JavaScript** was used to initialize the Collapsible Accordion and the sliders.
+* **Mongo DB** was used as the database to store the recipes.
+* **Imports** os, json, flask, flask.Pymongo and bson.ojectedid were all imported in to the aap.py file for the functions.
+* **Bootstrap themes** was used for the theme.
+* **Bootstrap** was used for most of the features and functionality.
+* **Font Awesome** was used for the icons.
+* **Heroku** was used to deploy the final version of the web application.
 
+**Materialize was a big part of the project in the early stages of but had to be scraped because it was
+ conflicting with bootstrap**
