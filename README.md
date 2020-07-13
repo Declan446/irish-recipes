@@ -190,7 +190,23 @@ The Irish Recipes Web Application main Technologies used were as follows:
   the hard way because i now have a much better understanding of Materialize and Bootstrap frameworks.** 
 
 # Deployment
- 
+
+**Deploying to Heroku**
+* sign up to heroku
+* create new app(irish-recipes)
+* connect heroku to Github
+* go to gitpod and in the command line type heroku login
+* create a requirements.txt file, which contains a list of our dependencies.
+* create a Procfile, which is a special kind of file that tells Heroku how to run our project.
+* set IP and PORT Config Vars.
+* create a secret key in the Config Vars in the heroku settings.
+* now go to the git command line and login to heroku.
+
+**Commands to push to heroku**
+1. $ Heroku login.
+2. $ Heroku ps:scale web=1
+3. $ Heroku push master
+
 
 
 
