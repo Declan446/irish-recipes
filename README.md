@@ -1,4 +1,4 @@
-# Project's Name: Irish Recipes
+# Irish Recipes
 
 **About:** I have based my project on Recipes of Ireland. I plan to create a clear , easy and well structured web application so that 
 people of all ages can find geart wholesome Irish Recipes. Users can also add their own recipes to the app and edit existing ones.
@@ -116,3 +116,41 @@ Format: ![Top Irish Restaurants](url)
 
 ![GitHub Logo](/static/Wireframes/Top-Irish-Restaurants-Mobile.png)
 Format: ![Top Irish Restaurants mobile view](url)
+
+The first ideas for the home are located in the static/wireframes 
+
+# Features
+
+**Nav Bar:** The nar bar has four links to the pages of the web application(Home, Add Recipe, Recipes, Top Irish Recipes) 
+The nav bar displays as a button when been viewed on a mobile device.
+
+**Footer:** The footer has three links in it to Boad Bia's twitter,facebook and instagram.
+
+**Form:** The form on the add recipes page has six input fields and a submit button.
+1. The first feild is a drop down menu that generates data using python to access data from the mongo database.
+2. The second is the recipe name.
+3. Is image URL.
+4. Is Ingredients for your recipe.
+5. Is cooking method
+6. Is a submit button
+
+When these field are filled in and you click submit the recipe will be added to the recipes mongo database.
+
+**Sliders:** On my home page i have four sliders that have 3 rotating images for the recipes.
+* Slider 1 = Irish Meat Recipes.
+* Slider 2 = Irish Fish Recipes.
+* Slider 3 = Irish Vegan Recipes.
+* Slider 4 = Irish Dessert Recipes.
+
+I got the slider from bootstrap.
+
+**Collapsible Accordion** On the recipes page the recipes are displayed in a Collapsible Accordion. The idea for this came from 
+another mini project called task manager but i got the one on the recipes page from bootstrap.
+
+**Edit button** Their is a edit button on every recipe created and when clicked it will take you to a edit recipes page.
+You can changed any detail of the recipe and submit the changes to mongo database.
+
+**Delete button** A delete button is present on every recipe and when clicked not only will it be deleted from the web application
+it will also be deleted from the mongo database.
+
+
