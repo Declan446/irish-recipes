@@ -15,17 +15,20 @@ DATABASE = "irish_recipes"
 mongo = PyMongo(app)
 
 
+# function for home page
 @app.route('/')
 @app.route("/get_recipes")
 def base2():
     return render_template("base2.html")
 
 
+# function to go to add.html
 @app.route('/add')
 def add():
     return render_template("add.html", food_type=mongo.db.food_type.find())
 
 
+# function to inserts the recipes from mongo db
 @app.route("/insert_recipe", methods=["POST"])
 def insert_recipe():
     recipes = mongo.db.recipes
@@ -33,11 +36,13 @@ def insert_recipe():
     return redirect(url_for("recipes"))
 
 
+# function to go to recipes.html
 @app.route('/recipes')
 def recipes():
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 
+# function to create the top.html page with the data from restaurants.json
 @app.route('/top')
 def top():
     data = []
@@ -46,6 +51,7 @@ def top():
     return render_template("top.html", restaurants=data)
 
 
+# function to edit recipes and add them to the mongo db
 @app.route("/edit_recipe/<recipe_id>")
 def edit_recipe(recipe_id):
     the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -53,6 +59,7 @@ def edit_recipe(recipe_id):
     return render_template("edit-recipe.html", recipe=the_recipe, food_type=all_food_type)
 
 
+# function to update the recipes
 @app.route("/update_recipe/<recipe_id>", methods=["POST"])
 def update_recipe(recipe_id):
     recipes = mongo.db.recipes
@@ -66,6 +73,7 @@ def update_recipe(recipe_id):
     return redirect(url_for("recipes"))
 
 
+# function to delete recipes from the web application and mongodb
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
