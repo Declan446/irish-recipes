@@ -171,3 +171,24 @@ The Irish Recipes Web Application main Technologies used were as follows:
 
 **Materialize was a big part of the project in the early stages of but had to be scraped because it was
  conflicting with bootstrap**
+
+ # Testing:
+ I tested my web application on google chrome, internet explorer, firefox and safari and found no problems displaying the web application
+ in any browser. The web application was also tested on all screen sizes.
+* Galaxy S5 = No problems.
+* Pixel 2 and 2 XL = No problems.
+* Iphone 5 = No problems.
+* Iphone 6/7/8 = No problems.
+* Iphone 5 = No problems.
+* Ipads = No problems
+
+ **Although no problems occured with the final testing of the web application, there were huge problems
+  with the web application on mobile sceen views when Bootstrap and Materialize were running together. For this reason Materialize
+  was scrapped.Bootstrap was kept because the clean blog theme was used and this is a Bootstrap theme.
+  To rectify this problem all Materialize components were removed and replaced with Bootstrap one's.
+  Due to these problems the web application took a lot longer then expected but it was a great lesson to learn
+  the hard way because i now have a much better understanding of Materialize and Bootstrap frameworks.** 
+ 
+
+
+
