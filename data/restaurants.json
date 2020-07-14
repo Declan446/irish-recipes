@@ -2,51 +2,61 @@
   {
     "restaurant_name": "Loam",
     "information": "Loam, a Michelin-starred dining room and wine bar  in Galway city, is Ireland’s restaurant of the year 2019. The restaurant, which opened in 2014, only uses ingredients from the west of Ireland, and has a strong sustainability ethos. It is owned and run by Enda McEvoy, who was voted best chef in Ireland at these awards in 2016.",
-    "image_source": "static/img/loam.jpg" 
+    "image_source": "static/img/loam.jpg",
+    "link": "https://loamgalway.com/"
   },
   {
     "restaurant_name": "Hooked",
     "information": "It comes as no surprise that Hooked is one of Sligo’s most loved restaurants. The younger, trendy little sibling of Eala Bhan, both restaurants a stones throw apart along a beautiful scenic stretch of the Garavogue River. The welcome is warm and a glimpse of the menu reassures you that you will not be leaving hungry. An eclectic and imaginative interior, designed by owner and local food champion, Anthony Gray.",
-    "image_source": "static/img/hooked.png"
+    "image_source": "static/img/hooked.png",
+    "link": "https://hookedsligo.ie/"
   },
   {
     "restaurant_name": "Eala Bhán",
     "information": "Eala Bhán, the Irish for White Swan, is picturesquely located on the banks of the Garavogue River.Stepping inside Eala Bhán, the atmosphere is lively and there is chatter and laughter aplenty, as much from the fantastically engaging staff as from the diners. Anthony Gray is the man behind this marvellous restaurant. A wonderful advocate for the hospitality industry in Sligo. Anthony’s sincerity and genuine love of local produce is second to none and this shines through ever so strongly in the food being served here in Eala Bhán.",
-    "image_source": "static/img/eala-bhan.jpg"
+    "image_source": "static/img/eala-bhan.jpg",
+    "link": "https://www.ealabhan.ie/"
   },
   {
     "restaurant_name": "Mamó",
     "information": "The old saying, ‘good things come in small packages’ could indeed relate directly to the perfectly curated little package that is Mamó. With so many new restaurants opening this year, we felt particularly drawn to Mamó. Killian Durkin has honed some serious skills under watchful eyes in both Thornton’s and Chapter One and his beautiful partner in both business and life, the very charming Jess D’Arcy (ex Etto) is the quintessential leading lady, providing warm welcomes and sensational recommendations.",
-    "image_source": "static/img/mamo.jpg"
+    "image_source": "static/img/mamo.jpg",
+    "link": "https://www.mamorestaurant.ie/"
   },
   {
     "restaurant_name": "Lemon & Duke",
     "information": "Lemon & Duke is situated on just off Grafton Street, where Lemon Street & Duke Street meet. They are open 7 days a week, offering a variety of tasty dishes for Brunch, Lunch and Dinner.If you are looking for a bar with great food, great service and relaxing music, Lemon & Duke is your new spot. Their head chef Anthony Duffy has focused on fresh and local produce and created a menu that borrows heavily from both European and Asian food styles.",
-    "image_source": "static/img/lemon-duke.jpg"
+    "image_source": "static/img/lemon-duke.jpg",
+    "link": "http://www.lemonandduke.ie/"
   },
   {
     "restaurant_name": "Beaufield Mews Restaurant",
     "information": "Nestled in Woodlands Avenue in Stillorgan, Beaufield Mews restaurant has been family run for almost 70 years.The Coachhouse Restaurant is situated on the ground floor and opens out onto the lawn, giving a wonderful view of their romantic garden. Lunch at Beaufield Mews is a relaxed and enjoyable experience for all, with the menu bursting with fresh ingredients and flavours.",
-    "image_source": "static/img/beaufield.jpg"
+    "image_source": "static/img/beaufield.jpg",
+    "link": "https://www.facebook.com/BeaufieldMews/"
   },
   {
     "restaurant_name": "The Butcher Grill",
     "information": "Meat lovers will be well aware of The Butcher Grill restaurant in bustling South Dublin village Ranelagh. The old butcher shop has been transformed into a warm restaurant with high tables and seating at the bar.Serving the finest cuts of meat from the best producers, The Butcher Grill team know how to treat their meat, grilling it to perfection on the wood-smoked grill.The intimate atmosphere of the dining room, combined with personal and relaxed service, provides the perfect setting in which to enjoy the succulent cuts of meat.",
-    "image_source": "static/img/butcher-grill.jpg"
+    "image_source": "static/img/butcher-grill.jpg",
+    "link": "https://www.thebutchergrill.ie/"
   },
   {
     "restaurant_name": "Whitefriar Grill",
     "information": "Whitefriar Grill is a New York vibe steakhouse in the heart of Dublin city, on Aungier Street.One of the best loved steakhouses in the city, you can indulge in offers like their Ribs n Rump Steak or the newly introduced ‘Whitefriar Grill Cut’s – open every night for dinner from 5pm.From 10.30am at the weekends, it serves up one of the most extravagant brunches in the capital – matched by their killer great cocktail list this is the place to go for a fun weekend feast.",
-    "image_source": "static/img/whitefriar-grill.jpg"
+    "image_source": "static/img/whitefriar-grill.jpg",
+    "link": "https://bowlane.ie/social/bow-lane-grill-2/"
   },
   {
     "restaurant_name": "The Cookbook Cafe",
     "information": "Set in the beautiful South Dublin Village of Glasthule, Chef Audrey McDonald, has created the warm and inviting Cookbook Cafe. Throughout this place you will find packed shelves with cookbooks which Audrey draws inspiration from. Audrey has cooked for Royalty and rock stars alike but has realised her dream by opening up her own place.",
-    "image_source": "static/img/cookbook-cafe.jpg"
+    "image_source": "static/img/cookbook-cafe.jpg",
+    "link": "https://www.facebook.com/Cookbookcafe.ie/"
   },
   {
     "restaurant_name": "The Green Barn",
     "information": "The Green Barn in located in Burtown House and Gardens. It is the perfect place to enjoy a quick lunch or a more relaxed dinner at the weekends.It is surrounded by beautiful park lands walled kitchen gardens, with a terrace and courtyards to soak up the peaceful atmosphere.The restaurant features high ceilings and expansive wall spaces, with movable panelled partitions to create that more intimate perfect space for any size of group. The style is based on Scandinavian bars with a New England twist.They use locally sourced beef, poultry and eggs. Head Gardener Dermot Carey supplies the kitchen with their own supply of organic vegetables.",
-    "image_source": "static/img/green-barn.png"
+    "image_source": "static/img/green-barn.png",
+    "link": "https://burtownhouse.ie/green-barn-shop/"
   }
 ]
