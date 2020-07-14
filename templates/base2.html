@@ -32,7 +32,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url_for('base2') }}">Taste Of Ireland</a>
+        <a class="navbar-brand" href="{{ url_for('base2') }}"
+          >Taste Of Ireland</a
+        >
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -90,84 +92,94 @@
     <div class="container">
       {% block content %}
 
-      <div class="caption center-align"><h2>Irish Meat Recipes</h2></div><br>
+      <div class="caption center-align"><h2>Irish Meat Recipes</h2></div>
+      <br />
       <!-- Carousel for displaying the meat recipes -->
       <div class="row">
-      <div
-        id="carouselExampleCaptions"
-        class="mx-auto carousel slide col-lg-8 caption center-align"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleCaptions"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/irish-stew.jpg"
-              class="d-block w-100"
-              alt="Irish Stew"
-            /></a>
-            <div class="carousel-caption d-md-block">
-              <h5 class="p-3 mb-2 bg-success text-white">Irish Stew</h5>
+        <div
+          id="carouselExampleCaptions"
+          class="mx-auto carousel slide col-lg-8 caption center-align"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="{{ url_for('recipes') }}"
+                ><img
+                  src="static/img/irish-stew.jpg"
+                  class="d-block w-100"
+                  alt="Irish Stew"
+              /></a>
+              <div class="carousel-caption d-md-block">
+                <h5 class="p-3 mb-2 bg-success text-white">Irish Stew</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="{{ url_for('recipes') }}"
+                ><img
+                  src="static/img/boiled-bacon.jpg"
+                  class="d-block w-100"
+                  alt="Boiled Bacon With Cabbage And Carrots"
+              /></a>
+              <div class="carousel-caption d-md-block">
+                <h5 class="p-3 mb-2 bg-success text-white">
+                  Boiled Bacon With Cabbage And Carrots
+                </h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="{{ url_for('recipes') }}"
+                ><img
+                  src="static/img/pork.jpg"
+                  class="d-block w-100"
+                  alt="Guinness And Honey Glazed Pork Loin"
+              /></a>
+              <div class="carousel-caption d-md-block">
+                <h5 class="p-3 mb-2 bg-success text-white">
+                  Guinness And Honey Glazed Pork Loin
+                </h5>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/boiled-bacon.jpg"
-              class="d-block w-100"
-              alt="Boiled Bacon With Cabbage And Carrots"
-            /></a>
-            <div class="carousel-caption d-md-block">
-              <h5 class="p-3 mb-2 bg-success text-white">
-                Boiled Bacon With Cabbage And Carrots
-              </h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/pork.jpg"
-              class="d-block w-100"
-              alt="Guinness And Honey Glazed Pork Loin"
-            /></a>
-            <div class="carousel-caption d-md-block">
-              <h5 class="p-3 mb-2 bg-success text-white">
-                Guinness And Honey Glazed Pork Loin
-              </h5>
-            </div>
-          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only text-success">Next</span>
+          </a>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only text-success">Next</span>
-        </a>
       </div>
-      </div><br>
+      <br />
 
-      <div class="caption center-align"><h2>Irish Fish Recipes</h2></div><br>
+      <div class="caption center-align"><h2>Irish Fish Recipes</h2></div>
+      <br />
       <!-- Carousel for displaying the fish recipes -->
 
-      <div id="carouselExampleCaptions2" class="mx-auto carousel slide col-lg-8" data-ride="carousel">
+      <div
+        id="carouselExampleCaptions2"
+        class="mx-auto carousel slide col-lg-8"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions2"
@@ -179,10 +191,11 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/salmon.jpg"
-              class="d-block w-100"
-              alt="Smoked Wild Salmon With Chive Pancakes"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/salmon.jpg"
+                class="d-block w-100"
+                alt="Smoked Wild Salmon With Chive Pancakes"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">
@@ -191,10 +204,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/haddock.jpg"
-              class="d-block w-100"
-              alt="Smoked Haddock And Calcannon"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/haddock.jpg"
+                class="d-block w-100"
+                alt="Smoked Haddock And Calcannon"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">
@@ -203,10 +217,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/scallops.jpg"
-              class="d-block w-100"
-              alt="Seared Scallops With Black Pudding And Cauliflower Purée"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/scallop.jpg"
+                class="d-block w-100"
+                alt="Seared Scallops With Black Pudding And Cauliflower Purée"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">
@@ -233,11 +248,17 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div><br>
+      </div>
+      <br />
 
-      <div class="caption center-align"><h2>Irish Vegan Recipes</h2></div><br>
+      <div class="caption center-align"><h2>Irish Vegan Recipes</h2></div>
+      <br />
       <!-- Carousel for displaying the vegan recipes -->
-      <div id="carouselExampleCaptions3" class="mx-auto carousel slide col-lg-8" data-ride="carousel">
+      <div
+        id="carouselExampleCaptions3"
+        class="mx-auto carousel slide col-lg-8"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions3"
@@ -249,10 +270,11 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/filo-pie.jpg"
-              class="d-block w-100"
-              alt="Crispy Spinach and Feta Filo Pie"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/filo-pies.jpg"
+                class="d-block w-100"
+                alt="Crispy Spinach and Feta Filo Pie"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">
@@ -261,10 +283,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/parsnip-gratin.jpg"
-              class="d-block w-100"
-              alt="Parsnip, potato & St Gall cheese gratin"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/parsnip-gratin.jpg"
+                class="d-block w-100"
+                alt="Parsnip, potato & St Gall cheese gratin"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">
@@ -273,10 +296,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/colcannon.jpg"
-              class="d-block w-100"
-              alt="Colcannon and Veg"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/colcannon.jpg"
+                class="d-block w-100"
+                alt="Colcannon and Veg"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">Colcannon and Veg</h5>
@@ -301,11 +325,17 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div><br>
+      </div>
+      <br />
 
-      <div class="caption center-align"><h2>Irish Desserts Recipes</h2></div><br>
+      <div class="caption center-align"><h2>Irish Desserts Recipes</h2></div>
+      <br />
       <!-- Carousel for displaying the desserts recipes -->
-      <div id="carouselExampleCaptions4" class="mx-auto carousel slide col-lg-8" data-ride="carousel">
+      <div
+        id="carouselExampleCaptions4"
+        class="mx-auto carousel slide col-lg-8"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions4"
@@ -317,20 +347,22 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-          <a href="{{ url_for('recipes') }}"><img
-              src="static/img/irish-tart.jpg"
-              class="d-block w-100"
-              alt="Irish Apple Tart"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/irish-tart.jpg"
+                class="d-block w-100"
+                alt="Irish Apple Tart"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">Irish Apple Tart</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/pudding.jpg"
-              class="d-block w-100"
-              alt="Guinness Chocolate Puddings"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/pudding.jpg"
+                class="d-block w-100"
+                alt="Guinness Chocolate Puddings"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">
@@ -339,10 +371,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="{{ url_for('recipes') }}"><img
-              src="static/img/baby-cakes.jpg"
-              class="d-block w-100"
-              alt="Black Velvet Baby Cakes"
+            <a href="{{ url_for('recipes') }}"
+              ><img
+                src="static/img/baby-cakes.jpg"
+                class="d-block w-100"
+                alt="Black Velvet Baby Cakes"
             /></a>
             <div class="carousel-caption d-md-block">
               <h5 class="p-3 mb-2 bg-success text-white">

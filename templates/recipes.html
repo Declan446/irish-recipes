@@ -3,7 +3,6 @@
 <div class="caption center-align"><h2 class="">Recipes</h2></div>
 <br />
 
-
 <!--collapseible accordion to display the recipes from mongodb. also uses a for loop to get the data-->
 <div class="accordion" id="accordionExample">
   <!--for loop to get the recipes from mongodb-->
@@ -18,7 +17,9 @@
         data-target="#collapse{{ recipe._id }}"
         aria-expanded=""
         aria-controls="collapseone"
-      ><!--displays the recipes dish name-->        <!--displays the recipes food type-->
+      >
+        <!--displays the recipes dish name-->
+        <!--displays the recipes food type-->
         <h5><strong>{{recipe.dish_name}}</strong> - {{recipe.food}}</h5></button
       ><br />
       <!--recipes image-->
@@ -45,7 +46,8 @@
       class="collapse"
       aria-labelledby="headingOne"
       data-parent="#accordionExample"
-    > <!--displays the recipes ingredients-->
+    >
+      <!--displays the recipes ingredients-->
       <div class="card-body">
         <span>
           {{recipe.ingredients}}

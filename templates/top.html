@@ -9,9 +9,17 @@
   <div class="col-md-7">
     <h3>{{ restaurant.restaurant_name }}</h3>
     <p>{{ restaurant.information }}</p>
-    <a target="blank" href="{{ restaurant.link }}" class="btn btn-primary active rounded" role="button" aria-pressed="true">{{ restaurant.restaurant_name }}</a>
+    <a
+      target="_blank"
+      href="{{ restaurant.link }}"
+      class="btn btn-primary active rounded"
+      role="button"
+      aria-pressed="true"
+      >{{ restaurant.restaurant_name }}</a
+    >
   </div>
-  <div class="col-md-5"><br>
+  <div class="col-md-5">
+    <br />
     <!--displays the restaurants image-->
     <img
       class="featurette-image img-responsive"
@@ -34,7 +42,14 @@
     <!--displays the restaurant name and information on the right if its an even number-->
     <h3>{{ restaurant.restaurant_name }}</h3>
     <p>{{ restaurant.information }}</p>
-    <a target="blank" href="{{ restaurant.link }}" class="btn btn-primary active rounded float-right" role="button" aria-pressed="true">{{ restaurant.restaurant_name }}</a>
+    <a
+      target="_blank"
+      href="{{ restaurant.link }}"
+      class="btn btn-primary active rounded float-right"
+      role="button"
+      aria-pressed="true"
+      >{{ restaurant.restaurant_name }}</a
+    >
   </div>
 </div>
 {% endif %}
